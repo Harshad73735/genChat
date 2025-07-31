@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const API_KEY = "AIzaSyCzTrJay5TrAsq519lUhMSHN98O5BvyT9w"; // Replace with your real key
+const API_KEY = process.env.api_key; // Replace with your real key
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([
